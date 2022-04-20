@@ -7,10 +7,10 @@ import sklearn
 print(sklearn.__version__)
 
 print(np.__version__)
-x, y = make_regression(n_samples= 100, random_state=0)
+x, y = make_regression(n_samples=100, random_state=0)
 # print(x[:10])
 # print(y[:10])
-lr= LinearRegression()
+lr = LinearRegression()
 
 result = cross_validate(lr, x, y)
 print(result)
